@@ -1,4 +1,4 @@
-package com.glolabs.verkundenbot.cloud.configuration;
+package com.glolabs.verkundenbot.cloud.config;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonTokenId;

@@ -1,4 +1,4 @@
-package com.glolabs.verkundenbot.cloud.configuration;
+package com.glolabs.verkundenbot.cloud.config;
 
 import com.fasterxml.jackson.datatype.threetenbp.ThreeTenModule;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
