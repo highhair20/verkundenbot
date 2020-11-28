@@ -106,3 +106,6 @@ venv.bak/
 # IDE
 .idea
 .iml
+
+.DS_Store
+**/.DS_Store
