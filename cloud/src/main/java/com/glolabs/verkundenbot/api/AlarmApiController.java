@@ -1,7 +1,7 @@
 package com.glolabs.verkundenbot.api;
 
-import io.swagger.model.ErrorResponse;
-import io.swagger.model.ModelApiResponse;
+import com.glolabs.verkundenbot.persistence.model.ErrorResponse;
+import com.glolabs.verkundenbot.persistence.model.ModelApiResponse;
 import java.util.UUID;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.swagger.annotations.*;

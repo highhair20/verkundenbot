@@ -5,9 +5,9 @@
  */
 package com.glolabs.verkundenbot.api;
 
-import io.swagger.model.ErrorResponse;
-import io.swagger.model.Plug;
-import io.swagger.model.Plugs;
+import com.glolabs.verkundenbot.persistence.model.ErrorResponse;
+import com.glolabs.verkundenbot.persistence.model.Plug;
+import com.glolabs.verkundenbot.persistence.model.Plugs;
 import java.util.UUID;
 import io.swagger.annotations.*;
 import org.springframework.http.ResponseEntity;

@@ -1,7 +1,7 @@
 package com.glolabs.verkundenbot.persistence.model;
 
 import java.util.Objects;
-import io.swagger.model.Plug;
+import com.glolabs.verkundenbot.persistence.model.Plug;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.validation.annotation.Validated;
