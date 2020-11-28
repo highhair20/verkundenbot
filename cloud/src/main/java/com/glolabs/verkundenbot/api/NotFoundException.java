@@ -1,4 +1,4 @@
-package io.swagger.api;
+package com.glolabs.verkundenbot.api;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2020-02-07T03:16:15.186Z[GMT]")
 public class NotFoundException extends ApiException {

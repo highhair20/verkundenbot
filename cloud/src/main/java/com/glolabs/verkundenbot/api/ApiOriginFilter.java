@@ -1,4 +1,4 @@
-package io.swagger.api;
+package com.glolabs.verkundenbot.api;
 
 import java.io.IOException;
 

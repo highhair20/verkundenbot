@@ -3,7 +3,7 @@
  * https://github.com/swagger-api/swagger-codegen
  * Do not edit the class manually.
  */
-package io.swagger.api;
+package com.glolabs.verkundenbot.api;
 
 import io.swagger.model.ErrorResponse;
 import io.swagger.model.ModelApiResponse;
