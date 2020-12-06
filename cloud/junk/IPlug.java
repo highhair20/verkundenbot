@@ -3,7 +3,7 @@
  * https://github.com/swagger-api/swagger-codegen
  * Do not edit the class manually.
  */
-package com.glolabs.verkundenbot.api;
+package com.glolabs.verkundenbot.web.controller;
 
 import com.glolabs.verkundenbot.persistence.model.ErrorResponse;
 import com.glolabs.verkundenbot.persistence.model.Plug;
@@ -28,7 +28,7 @@ import java.util.List;
 import java.util.Map;
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2020-02-07T03:16:15.186Z[GMT]")
 @Api(value = "plug", description = "the plug API")
-public interface PlugApi {
+public interface IPlug {
 
     @ApiOperation(value = "", nickname = "getPlugs", notes = "returns all plugs with their states for a given device", response = Plugs.class, tags={ "Plugs", })
     @ApiResponses(value = { 

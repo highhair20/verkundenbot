@@ -1,4 +1,4 @@
-package com.glolabs.verkundenbot.cloud.config;
+package com.glolabs.verkundenbot.config;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

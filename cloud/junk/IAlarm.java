@@ -3,7 +3,7 @@
  * https://github.com/swagger-api/swagger-codegen
  * Do not edit the class manually.
  */
-package com.glolabs.verkundenbot.api;
+package com.glolabs.verkundenbot.web.controller;
 
 import com.glolabs.verkundenbot.persistence.model.ErrorResponse;
 import com.glolabs.verkundenbot.persistence.model.ModelApiResponse;
@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.Map;
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2020-02-07T03:16:15.186Z[GMT]")
 @Api(value = "alarm", description = "the alarm API")
-public interface AlarmApi {
+public interface IAlarm {
 
     @ApiOperation(value = "", nickname = "startDeployment", notes = "Begin a deployment.", response = ModelApiResponse.class, tags={ "Alarms", })
     @ApiResponses(value = { 
