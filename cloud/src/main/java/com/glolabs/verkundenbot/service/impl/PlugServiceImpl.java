@@ -16,12 +16,12 @@ public class PlugServiceImpl implements IPlugService {
     private IPlugRepository plugRepository;
 
     public PlugServiceImpl(IPlugRepository plugRepository) {
-        this.PlugRepository = plugRepository;
+        this.plugRepository = plugRepository;
     }
 
     @Override
     public Optional<Plug> findById(Integer id) {
-        return PlugRepository.findOne(id);
+        return plugRepository.findById(id);
     }
 
     @Override
@@ -29,17 +29,17 @@ public class PlugServiceImpl implements IPlugService {
         if (StringUtils.isEmpty(plug.getId())) {
             plug.setDateCreated(LocalDate.now());
         }
-        return PlugRepository.save(plug);
+        return plugRepository.save(plug);
     }
 
     @Override
     public Iterable<Plug> findAll() {
-        return PlugRepository.findAll();
+        return plugRepository.findAll();
     }
 
     @Override
-    public void delete(Long id) {
-        PlugRepository.deleteById(id);
+    public void delete(Integer id) {
+        plugRepository.deleteById(id);
     }
 
 }

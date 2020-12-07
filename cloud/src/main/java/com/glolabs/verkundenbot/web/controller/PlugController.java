@@ -2,9 +2,8 @@ package com.glolabs.verkundenbot.web.controller;
 
 import com.glolabs.verkundenbot.service.IPlugService;
 
-import com.glolabs.verkundenbot.persistence.model.ErrorResponse;
+// import com.glolabs.verkundenbot.persistence.model.ErrorResponse;
 import com.glolabs.verkundenbot.persistence.model.Plug;
-import com.glolabs.verkundenbot.persistence.model.Plugs;
 import java.util.UUID;
 
 import org.slf4j.Logger;

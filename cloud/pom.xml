@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.verkundenbot</groupId>
+    <groupId>com.glolabs.verkundenbot</groupId>
     <artifactId>cloud</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>cloud</name>
@@ -21,20 +21,6 @@
     </properties>
 
     <dependencies>
-
-        <!--SpringFox dependencies -->
-        <dependency>
-            <groupId>io.springfox</groupId>
-            <artifactId>springfox-swagger2</artifactId>
-            <version>${springfox-version}</version>
-        </dependency>
-
-        <!-- Bean Validation API support -->
-        <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-        </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -47,6 +33,22 @@
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
+        </dependency>
+
+
+
+
+        <!--SpringFox dependencies -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-version}</version>
+        </dependency>
+
+        <!-- Bean Validation API support -->
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
         </dependency>
 
         <!-- IoT uses xml so we are using Jackson -->
@@ -68,12 +70,7 @@
 </project>
 
 
-<!--    <properties>-->
-<!--        <java.version>1.7</java.version>-->
-<!--        <maven.compiler.source>${java.version}</maven.compiler.source>-->
-<!--        <maven.compiler.target>${java.version}</maven.compiler.target>-->
 
-<!--    </properties>-->
 
 <!--    <build>-->
 <!--        <sourceDirectory>src/main/java</sourceDirectory>-->

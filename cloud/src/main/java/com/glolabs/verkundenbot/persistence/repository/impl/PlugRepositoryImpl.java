@@ -1,4 +1,4 @@
-package com.baeldung.ls.persistence.repository.impl;
+package com.glolabs.verkundenbot.persistence.repository.impl;
 
 import java.util.Optional;
 import javax.persistence.EntityManager;
