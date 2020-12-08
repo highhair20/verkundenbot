@@ -3,7 +3,6 @@ package com.glolabs.verkundenbot;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-// todo - rename plug to zone
 @SpringBootApplication
 public class App {
 

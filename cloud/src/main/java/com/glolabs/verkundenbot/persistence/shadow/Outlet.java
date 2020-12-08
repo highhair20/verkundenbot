@@ -10,11 +10,11 @@
 // import javax.validation.constraints.*;
 //
 // /**
-//  * Plug
+//  * Outlet
 //  */
 // @Validated
 // @Entity
-// public class Plug   {
+// public class Outlet   {
 //
 //   @JsonProperty("id")
 //   private Integer id = null;
@@ -71,7 +71,7 @@
 //   @JsonProperty("create_dtime")
 //   private OffsetDateTime createDtime = null;
 //
-//   public Plug id(Integer id) {
+//   public Outlet id(Integer id) {
 //     this.id = id;
 //     return this;
 //   }
@@ -88,7 +88,7 @@
 //     this.id = id;
 //   }
 //
-//   public Plug zone(ZoneEnum zone) {
+//   public Outlet zone(ZoneEnum zone) {
 //     this.zone = zone;
 //     return this;
 //   }
@@ -105,7 +105,7 @@
 //     this.zone = zone;
 //   }
 //
-//   public Plug name(String name) {
+//   public Outlet name(String name) {
 //     this.name = name;
 //     return this;
 //   }
@@ -122,7 +122,7 @@
 //     this.name = name;
 //   }
 //
-//   public Plug description(String description) {
+//   public Outlet description(String description) {
 //     this.description = description;
 //     return this;
 //   }
@@ -139,7 +139,7 @@
 //     this.description = description;
 //   }
 //
-//   public Plug state(Boolean state) {
+//   public Outlet state(Boolean state) {
 //     this.state = state;
 //     return this;
 //   }
@@ -156,7 +156,7 @@
 //     this.state = state;
 //   }
 //
-//   public Plug updateDtime(OffsetDateTime updateDtime) {
+//   public Outlet updateDtime(OffsetDateTime updateDtime) {
 //     this.updateDtime = updateDtime;
 //     return this;
 //   }
@@ -173,7 +173,7 @@
 //     this.updateDtime = updateDtime;
 //   }
 //
-//   public Plug createdTime(OffsetDateTime createdTime) {
+//   public Outlet createdTime(OffsetDateTime createdTime) {
 //     this.createdTime = createdTime;
 //     return this;
 //   }
@@ -199,14 +199,14 @@
 //     if (o == null || getClass() != o.getClass()) {
 //       return false;
 //     }
-//     Plug plug = (Plug) o;
-//     return Objects.equals(this.id, plug.id) &&
-//         Objects.equals(this.zone, plug.zone) &&
-//         Objects.equals(this.name, plug.name) &&
-//         Objects.equals(this.description, plug.description) &&
-//         Objects.equals(this.state, plug.state) &&
-//         Objects.equals(this.updateDtime, plug.updateDtime) &&
-//         Objects.equals(this.createDtime, plug.createDtime);
+//     Outlet outlet = (Outlet) o;
+//     return Objects.equals(this.id, outlet.id) &&
+//         Objects.equals(this.zone, outlet.zone) &&
+//         Objects.equals(this.name, outlet.name) &&
+//         Objects.equals(this.description, outlet.description) &&
+//         Objects.equals(this.state, outlet.state) &&
+//         Objects.equals(this.updateDtime, outlet.updateDtime) &&
+//         Objects.equals(this.createDtime, outlet.createDtime);
 //   }
 //
 //   @Override
@@ -217,7 +217,7 @@
 //   @Override
 //   public String toString() {
 //     StringBuilder sb = new StringBuilder();
-//     sb.append("class Plug {\n");
+//     sb.append("class Outlet {\n");
 //
 //     sb.append("    id: ").append(toIndentedString(id)).append("\n");
 //     sb.append("    zone: ").append(toIndentedString(zone)).append("\n");
