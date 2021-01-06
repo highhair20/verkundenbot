@@ -1,4 +1,4 @@
-package com.glolabs.verkundenbot.persistence.model;
+package com.glolabs.verkundenbot.cloud.persistence.model;
 
 import java.util.Objects;
 import com.fasterxml.jackson.annotation.JsonProperty;

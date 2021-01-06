@@ -1,4 +1,4 @@
-// package com.glolabs.verkundenbot.persistence.shadow;
+// package com.glolabs.verkundenbot.cloud.persistence.shadow;
 //
 // import java.util.Objects;
 // import com.fasterxml.jackson.annotation.JsonProperty;

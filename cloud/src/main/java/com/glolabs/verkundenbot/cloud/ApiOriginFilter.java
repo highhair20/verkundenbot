@@ -1,4 +1,4 @@
-package com.glolabs.verkundenbot.api;
+package com.glolabs.verkundenbot.cloud;
 
 import java.io.IOException;
 

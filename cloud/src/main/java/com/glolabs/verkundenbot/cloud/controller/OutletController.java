@@ -1,11 +1,12 @@
-package com.glolabs.verkundenbot.web.controller;
+package com.glolabs.verkundenbot.cloud.controller;
 
-import com.glolabs.verkundenbot.persistence.model.Outlet;
-import com.glolabs.verkundenbot.service.IOutletService;
+import com.glolabs.verkundenbot.cloud.persistence.model.Outlet;
+import com.glolabs.verkundenbot.cloud.service.IOutletService;
 
-// import com.glolabs.verkundenbot.persistence.model.ErrorResponse;
+// import com.glolabs.verkundenbot.cloud.persistence.model.ErrorResponse;
 
-import java.time.LocalDate;
+import org.springframework.web.bind.annotation.*;
+import org.threeten.bp.LocalDateTime;
 import java.util.Optional;
 
 import org.slf4j.Logger;
@@ -14,13 +15,9 @@ import org.slf4j.LoggerFactory;
 //import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 //import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
 //import org.springframework.web.bind.annotation.PutMapping;
 //import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 //import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.annotation.RestController;
 
 import javax.validation.Valid;
 //import javax.servlet.http.HttpServletRequest;
@@ -39,12 +36,14 @@ public class OutletController {
     }
 
     @PostMapping(value = "/{id}", consumes = { "application/json" }, produces = { "application/json" })
-    public ResponseEntity<Outlet> getOutlet(@Valid @PathVariable("id") Long id) {
-        Outlet outlet = new Outlet("My First Outlet", LocalDate.now());
+    public ResponseEntity<Outlet> createOutlet(@Valid @PathVariable("id") Long id) {
+        Outlet outlet = new Outlet("My First Outlet");
         outletService.save(outlet);
 
         Optional<Outlet> optionalOutlet = outletService.findById(outlet.getId());
         optionalOutlet.ifPresent(System.out::println);
+
+        return ResponseEntity.accepted().body(outlet);
     }
 
 //    public OutletDto findOne(@PathVariable Long id) {
@@ -53,14 +52,15 @@ public class OutletController {
 //        return convertToDto(entity);
 //    }
 
-//    @GetMapping(value = "/{id}", consumes = { "application/json" }, produces = { "application/json" })
-//    public ResponseEntity<Outlet> getOutlet(@Valid @PathVariable("id") Long id) {
-//        Outlet outlet = new Outlet("My First Outlet", LocalDate.now());
-//        outletService.save(outlet);
-//
-//        Optional<Outlet> optionalOutlet = outletService.findById(outlet.getId());
-//        optionalOutlet.ifPresent(System.out::println);
-//    }
+    @GetMapping(value = "/{id}", consumes = { "application/json" }, produces = { "application/json" })
+    public ResponseEntity<Outlet> getOutlet(@Valid @PathVariable("id") Long id) {
+        Outlet outlet = new Outlet("My First Outlet");
+        outletService.save(outlet);
+
+        Optional<Outlet> optionalOutlet = outletService.findById(outlet.getId());
+        optionalOutlet.ifPresent(System.out::println);
+        return ResponseEntity.accepted().body(outlet);
+    }
 
 //    public ResponseEntity<Outlets> getOutlets(@ApiParam(value = "" ,required=true) @RequestHeader(value="Authorization", required=true) String authorization,@ApiParam(value = "" ,required=true) @RequestHeader(value="X-Device-Uuid", required=true) UUID xDeviceUuid) {
 //        String accept = request.getHeader("Accept");

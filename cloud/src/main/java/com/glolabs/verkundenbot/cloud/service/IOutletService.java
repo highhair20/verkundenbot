@@ -1,8 +1,8 @@
-package com.glolabs.verkundenbot.service;
+package com.glolabs.verkundenbot.cloud.service;
 
 import java.util.Optional;
 
-import com.glolabs.verkundenbot.persistence.model.Outlet;
+import com.glolabs.verkundenbot.cloud.persistence.model.Outlet;
 
 public interface IOutletService {
     Optional<Outlet> findById(Long id);

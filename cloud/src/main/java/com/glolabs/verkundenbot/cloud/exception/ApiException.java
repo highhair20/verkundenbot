@@ -1,4 +1,4 @@
-package com.glolabs.verkundenbot.api;
+package com.glolabs.verkundenbot.cloud.exception;
 
 @javax.annotation.Generated(value = "io.swagger.codegen.v3.generators.java.SpringCodegen", date = "2020-02-07T03:16:15.186Z[GMT]")
 public class ApiException extends Exception{

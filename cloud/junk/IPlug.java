@@ -3,11 +3,11 @@
  * https://github.com/swagger-api/swagger-codegen
  * Do not edit the class manually.
  */
-package com.glolabs.verkundenbot.web.controller;
+package com.glolabs.verkundenbot.cloud.controller;
 
-import com.glolabs.verkundenbot.persistence.model.ErrorResponse;
-import com.glolabs.verkundenbot.persistence.model.Plug;
-import com.glolabs.verkundenbot.persistence.model.Plugs;
+import com.glolabs.verkundenbot.cloud.persistence.model.ErrorResponse;
+import com.glolabs.verkundenbot.cloud.persistence.model.Plug;
+import com.glolabs.verkundenbot.cloud.persistence.model.Plugs;
 import java.util.UUID;
 import io.swagger.annotations.*;
 import org.springframework.http.ResponseEntity;

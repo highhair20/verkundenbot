@@ -1,8 +1,8 @@
-//package com.glolabs.verkundenbot.web.controller;
+//package com.glolabs.verkundenbot.cloud.controller;
 //
-//import com.glolabs.verkundenbot.persistence.model.Device;
-//import com.glolabs.verkundenbot.persistence.model.Devices;
-//import com.glolabs.verkundenbot.persistence.model.ErrorResponse;
+//import com.glolabs.verkundenbot.cloud.persistence.model.Device;
+//import com.glolabs.verkundenbot.cloud.persistence.model.Devices;
+//import com.glolabs.verkundenbot.cloud.persistence.model.ErrorResponse;
 //import java.util.UUID;
 //import com.fasterxml.jackson.databind.ObjectMapper;
 //import io.swagger.annotations.*;
