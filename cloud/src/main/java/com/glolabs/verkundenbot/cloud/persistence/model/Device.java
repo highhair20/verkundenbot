@@ -1,6 +1,8 @@
 package com.glolabs.verkundenbot.cloud.persistence.model;
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Type;
+import org.hibernate.type.UUIDCharType;
 import org.joda.time.DateTime;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
@@ -20,9 +22,7 @@ import java.util.UUID;
 public class Device {
 
     @Id
-    @GeneratedValue(generator = "uuid")
-    @GenericGenerator(name = "uuid", strategy = "uuid2")
-    @Column(name = "id", unique = true, nullable = false)
+    @Type(type="uuid-char")
     private UUID id;
 
     private String name = null;
@@ -33,15 +33,14 @@ public class Device {
 //    @OneToMany(mappedBy="device")
 //    private Set<Outlet> outlets;
 
-
-
     public Device() {
     }
 
-    public Device(String name) {
-      this.name = name;
+    public Device(UUIDCharType id) {
+      this.id = id;
 //      this.outlets = new HashSet<>();
     }
+
 
 //    public Device(Device device) {
 //        this(device.getName());
@@ -50,11 +49,11 @@ public class Device {
 //                .collect(Collectors.toSet());
 //    }
 
-    public UUID getId() {
+    public UUIDCharType getId() {
         return id;
     }
 
-    public void setId(UUID id) {
+    public void setId(UUIDCharType id) {
         this.id = id;
     }
 

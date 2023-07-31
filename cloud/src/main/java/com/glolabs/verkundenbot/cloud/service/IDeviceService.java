@@ -5,6 +5,7 @@ import com.glolabs.verkundenbot.cloud.persistence.model.Device;
 import org.hibernate.type.UUIDCharType;
 
 import java.util.Optional;
+import java.util.UUID;
 
 public interface IDeviceService {
     Iterable<Device> findAll();
