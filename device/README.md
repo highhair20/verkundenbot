@@ -5,49 +5,13 @@ The messages determine the state of the physical device.
 
 ## Hardware
 For the purposes of this project I used a RaspberryPi 2 I had lying around.
-Before we do anything else we should make sure we are running the latest
-version of the Raspian OS and other software.
-
-Make sure that we can ssh into the Raspberry Pi. In order to do so the 
-```/boot/ssh``` file just exist with the proper permissions.
+Create the directory where the software will live and get the latest git checkout.
 ```angular2html
-sudo -i
-cd /boot
-touch ssh
-chown root:root ssh
-chmod 755 ssh
-shutdown -r now
+sudo git clone https://github.com/highhair20/verkundenbot.git /opt/verkundenbot
 ```
 
-Begin by updating the repository package list:
-```buildoutcfg
-sudo apt update
-```
 
-When this is done, run the upgrade command:
-```buildoutcfg
-sudo apt dist-upgrade
-sudo apt autoremove
-```
 
-Follow any prompts, and wait for the Pi to be upgraded. When you’re done, type:
-```buildoutcfg
-sudo apt clean
-```
-
-This will discard any unneeded files that have been downloaded as part of the upgrade. 
-Finish by restarting:
-```buildoutcfg
-sudo reboot
-```
-
-When your Raspberry Pi has restarted, you’ll be using the latest version of Raspbian.
-
-Create the directory where the software will live and get the latest git checkout. 
-```angular2html
-cd /opt
-sudo git clone https://github.com/highhair20/verkundenbot.git
-```
 
 ## Interfaces
 

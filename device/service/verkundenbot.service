@@ -9,3 +9,15 @@ ExecStart=/path/to/your/app/start_command
 
 [Install]
 WantedBy=multi-user.target
+
+
+
+
+[Unit]
+Description=My Script
+
+[Service]
+ExecStart=/usr/bin/python3 /path/script.py
+
+[Install]
+WantedBy=multi-user.target
