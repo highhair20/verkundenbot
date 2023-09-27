@@ -1,16 +1,32 @@
-# Verkundenbot Device
+# Verkündenbot Device
 
-The Verkundenbot Device is an AWS IoT enabled device.
+The Verkündenbot Device is an AWS IoT enabled device.
 The messages determine the state of the physical device.
 
 ## Hardware
 For the purposes of this project I used a RaspberryPi 2 I had lying around.
 Create the directory where the software will live and get the latest git checkout.
-```angular2html
+```
 sudo git clone https://github.com/highhair20/verkundenbot.git /opt/verkundenbot
 ```
 
+## IoT Cloud Infrastructure
 
+Before beginning have the following information ready:
+ * aws_account_id
+ * aws_profile (Read more [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html))
+ * aws_region (ex: us-east-1)
+
+From the root of the project run the following Terraform commands.
+```
+cd ./iot/terraform
+
+terraform init
+
+terraform plan
+
+terraform apply
+```
 
 
 ## Interfaces
