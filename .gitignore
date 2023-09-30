@@ -1,6 +1,6 @@
 # Verkundenbot stuff
-**/logs
-**/junk
+iot/bak/logs
+iot/bak/junk
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -117,3 +117,4 @@ venv.bak/
 **/.terraform
 **/terraform.tfstate
 **/terraform.tfstate.backup
+iot/terraform/terraform.tfvars

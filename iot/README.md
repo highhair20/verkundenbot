@@ -1,3 +1,30 @@
+## IoT Cloud Infrastructure
+
+Before beginning have the following information ready. You will be prompted for 
+them during the terraform plan, apply and destroy steps.
+ * aws_account_id
+ * aws_profile (Read more [here](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html))
+ * aws_region (ex: us-east-1)
+
+To avoid having to enter the values each time you run a terraform command you can 
+create a ```terraform.tfvars``` file ([ref](https://www.virtualizationhowto.com/2022/05/terraform-prompt-for-variable-input-when-creating-a-virtual-machine/)). 
+However, I do not recommend checking the file in to git.
+
+From the root of the project run the following Terraform commands.
+```
+cd ./iot/terraform
+
+terraform init
+
+terraform plan
+
+terraform apply
+```
+
+
+
+
+
 # verkundenbot-cloud
 
 Verkundenbot Cloud is a Java Spring Boot REST API that runs on an 
