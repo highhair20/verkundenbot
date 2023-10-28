@@ -10,14 +10,14 @@ variable "aws_region" {
   type    = string
 }
 
-variable "serial_number" {
+variable "device_id" {
   type    = string
-  default = "26b786d5-d071-42bb-a9fc-7261da355053"
 }
 
 variable "client_id" {
   type    = string
-  default = "c89369fb-d057-4ec4-aa78-76d14511e211"
 }
 
-
+variable "outputs_path" {
+  type = string
+}

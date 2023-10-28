@@ -1,6 +1,10 @@
 # Verkündenbot
 
-## Purpose
+---
+## What is it and Why? 
+In short, Verkündenbot is a set of individually programmable plugs. Yes you can purchase
+programmable plugs on Amazon; in many case far cheaper than it costs to build this project. 
+
 The purpose of this project is to create a physical device that enables exploration 
 of prevalent technologies including Internet of Things (IoT) 
 and Message Queuing Telemetry Transport (MQTT), while concurrently delving into 
@@ -14,14 +18,17 @@ ensure the safety and well-being of all individuals involved.
 
 ![Verkundenbot](https://github.com/highhair20/verkundenbot/blob/master/resources/vkb_large.jpg?raw=true)
 
-## Getting Started
-### Setup the Device
-### Setup the IoT Infrastructure
+## Before You Begin
+This project uses Terraform with an S3 backend. If you are not already set up for an S3 backend 
+you can follow the steps [here](https://github.com/highhair20/terraform-backend-s3).
 
+## Getting Started
+* [Setup the Device](device/README.md)
+* [Setup the IoT Infrastructure](iot/README.md)
+
+--- 
 
 ## Technologies
-#### Common Services
-* Github
 
 #### AWS
 * AWS Cloud Services
