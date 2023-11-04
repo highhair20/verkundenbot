@@ -3,7 +3,7 @@
 ---
 ## What is it and Why? 
 In short, Verkündenbot is a set of individually programmable plugs. Yes you can purchase
-programmable plugs on Amazon; in many case far cheaper than it costs to build this project. 
+programmable plugs on Amazon, in many case far cheaper than it costs to build this project. 
 
 The purpose of this project is to create a physical device that enables exploration 
 of prevalent technologies including Internet of Things (IoT) 

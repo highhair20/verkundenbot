@@ -114,7 +114,7 @@ venv.bak/
 .DS_Store
 **/.DS_Store
 
-**/.terraform*
+**/.terraform
 **/terraform.tfstate
 **/terraform.tfstate.backup
 iot/terraform/terraform.tfvars
