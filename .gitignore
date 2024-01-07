@@ -115,6 +115,8 @@ venv.bak/
 **/.DS_Store
 
 **/.terraform
+**/.terraform*
 **/terraform.tfstate
 **/terraform.tfstate.backup
-iot/terraform/terraform.tfvars
+**/terraform.tfvars
+**/terraform/backend.conf

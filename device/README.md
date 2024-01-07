@@ -15,10 +15,13 @@ I set it up as a headless RaspberryPi.
 to set up a headless RaspberryPi
 2. SSH into the RaspberryPi and get the latest git checkout:
 ```
-sudo git clone https://github.com/highhair20/verkundenbot.git /opt/verkundenbot
+sudo git clone https://github.com/highhair20/verkundenbot.git /opt/glolabs/verkundenbot
 ```
 3. Install the Verkündenbot software as a service. This will guarantee the application
    restarts when the device is plugged in.
 ```
-bash /opt/verkundenbot/device/scripts/install.sh
+bash /opt/glolabs/verkundenbot/device/scripts/install.sh
 ```
+
+# ToDo
+* Terraform the [RaspberryPi](https://github.com/clayshek/terraform-raspberrypi-bootstrap/blob/master/main.tf)
